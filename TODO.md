@@ -10,7 +10,6 @@
 
 ## Victoria
 
--   Test-Commit erstellen
 
 ## Valentin
 
