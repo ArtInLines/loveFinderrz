@@ -1,7 +1,5 @@
 ## Jakob
 
--   Test-Commit erstellen
-
 ## Janus
 
 -   ...
