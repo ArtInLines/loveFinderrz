@@ -6,7 +6,8 @@
 
 ## Kevin
 
--   Test-Commit erstellen
+-   Funktionalität der Buttons(Navigationsleiste) einstellen
+-   Kleinigkeiten am Design anpassen
 
 ## Victoria
 
