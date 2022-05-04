@@ -1,241 +1,68 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>LoveFinderzz</title>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
-    <meta name="generator" content="HAPedit 3.1">
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="LoveFinderzz" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="192" />
-    <meta property="og:image:height" content="192" />
-    <meta property="og:image:alt" content="W3dcos" />
-    <style type="text/css">
+	<head>
+		<title>LoveFinderzz</title>
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+		<meta name="generator" content="HAPedit 3.1" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="LoveFinderzz" />
+		<meta property="og:image:type" content="image/jpeg" />
+		<meta property="og:image:width" content="192" />
+		<meta property="og:image:height" content="192" />
+		<meta property="og:image:alt" content="W3dcos" />
+		<link rel="stylesheet" href="/public/style.css" />
+	</head>
 
-        h1 {
-			color: red;
-		}
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1 align="center">LoveFinderzz</h1>
+			</div>
 
-		nav > ul {
-			margin: 0;
-			padding: 0;
-		}
+			<div id="wrapper">
+				<div id="content">
+					<h2>Das geht ab in Mannheim!</h2>
+					<iframe
+						width="1500"
+						height="750"
+						style="border: 0"
+						loading="lazy"
+						allowfullscreenreferrerpolicy="no-referrer-when-downgrade"
+						src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAx0K0GyT-1Bbh0K1xuuPDPYzbrCRaIwlg&q=Space+Needle,Seattle+WA"
+					></iframe>
+				</div>
+			</div>
 
-		nav li {
-			list-style: none;
-			font-size: 1.5em;
-			position: relative;
-			margin: 0 0 .2em 0;
-			padding: 0;
-			width: 12em;
-		}
+			<div id="navigation">
+				<!-- Zum markieren des aktuellen Menu Punkts: aria-current="page"-->
 
-		nav ul ul {
-			position: absolute;
-			top: -0.6em;
-			left: 10em;
-			font: 0/0 serif;
-			/* Unternavigation ausblenden */
-			
-			z-index: -1;
-			transition: font 0.5s;
-		}
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li tabindex="0"><a href="#">Feiern</a></li>
+						<li><a href="#">Chillen</a></li>
+						<li tabindex="0"><a href="#">Veranstaltungen</a></li>
+						<li><a href="#">Impressum</a></li>
+						<li><a href="#">Kontakt</a></li>
+					</ul>
+				</nav>
+			</div>
 
-		nav ul li:hover ul,
-		nav ul a:focus ~ ul {
-			font: inherit;
-			z-index: auto;
-			/*  Unternavigation einblenden */
-		}
+			<div id="extra">
+				<h3>Highlights der Woche!</h3>
+				<h4>Outdoor:</h4>
+				<ul>
+					<li>- Luisenpark</li>
+					<li>- Wasserturm</li>
+				</ul>
+				<h4>Indoor:</h4>
+				<ul>
+					<li>- Bowling</li>
+					<li>- Pizza essen</li>
+				</ul>
+			</div>
+		</div>
 
-		@media (min-width: 45em) {
-			nav li {
-				font-size: 1em;
-			}
-		}
-
-		nav a {
-			display: block;
-			padding: 0.4em;
-			text-decoration: none;
-			font-weight: bold;
-			text-align: center;
-			border: thin solid darkblue;
-			border-radius: 10px;
-			box-shadow: 0 5px 10px white inset;
-			color: red;
-			background-color: transparent;
-			transition: all .25s ease-in;
-		}
-
-		nav li[aria-current] a {
-			background-color: firebrick;
-			color: red;
-		}
-
-		nav a:focus,
-		nav a:hover,
-		nav li[aria-current] a:focus,
-		nav li[aria-current] a:hover {
-			color: darkblue;
-			background-color: red;
-		}
-
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            color: #292929;
-            font: 90% Roboto, Arial, sans-serif;
-            font-weight: 300;
-        }
-
-        p {
-            padding: 0 10px;
-            line-height: 1.8;
-        }
-
-        ul li {
-            padding-right: 10px;
-            line-height: 1.6;
-        }
-
-        h3 {
-            padding: 5px 20px;
-            margin: 0;
-        }
-
-        div#header {
-            position: relative;
-        }
-
-        div#header h1 {
-            height: 80px;
-            line-height: 80px;
-            margin: 0;
-            padding-left: 10px;
-            background: #e0e0e0;
-            color: red;
-        }
-
-        div#header a {
-            position: absolute;
-            right: 0;
-            top: 23px;
-            padding: 10px;
-            color: #006;
-        }
-
-        div#navigation {
-            background: #fff;
-        }
-
-        div#navigation li {
-            list-style: none;
-        }
-
-        div#extra {
-            background: indianred;
-        }
-
-        div#footer {
-            background: #42444e;
-            color: #fff;
-        }
-
-        div#footer p {
-            padding: 20px 10px;
-        }
-
-        div#wrapper {
-            float: left;
-            width: 100%;
-        }
-
-        div#content {
-            margin: 0 10%;
-        }
-
-        div#navigation {
-            float: left;
-            width: 10%;
-            margin-left: -100%;
-        }
-
-        div#extra {
-            float: right;       
-            width: 10%;
-            margin-left: -25%;
-        }
-
-        div#footer {
-            clear: left;
-            width: 100%;
-        }
-
-    </style>
-
-</head>
-
-
-<body>
-<div id="container">
-
-    <div id="header">
-        <h1 align="center">LoveFinderzz</h1>
-    </div>
-
-    <div id="wrapper">
-        <div id="content">
-            <h2>Das geht ab in Mannheim!</h2>
-            <iframe width="1500" height="750" style="border:0" loading="lazy" allowfullscreenreferrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAx0K0GyT-1Bbh0K1xuuPDPYzbrCRaIwlg&q=Space+Needle,Seattle+WA"></iframe>
-
-        </div>
-    </div>
-
-
-    <div id="navigation">
-
-
-        <!-- Zum markieren des aktuellen Menu Punkts: aria-current="page"-->
-
-
-        <nav>
-			<ul>
-				<li><a href="#">Home</a>
-				</li>
-				<li tabindex="0"><a href="#">Feiern</a>
-				</li>
-				<li><a href="#">Chillen</a>
-				</li>
-				<li tabindex="0"><a href="#">Veranstaltungen</a>
-				</li>
-				<li><a href="#">Impressum</a>
-				</li>
-				<li><a href="#">Kontakt</a>
-				</li>
-			</ul>
-		</nav>
-    </div>
-
-
-    <div id="extra">
-        <h3>Highlights der Woche!</h3>
-        <h4>Outdoor:</h4>
-        <ul>
-            <li>- Luisenpark</li>
-            <li>- Wasserturm</li>
-        </ul>
-        <h4>Indoor:</h4>
-        <ul>
-            <li>- Bowling</li>
-            <li>- Pizza essen</li>
-        </ul>
-    </div>
-</div>
-
-<script type="text/javascript">AddFillerLink("content", "navigation", "extra")</script>
-</body>
+		<script src="/public/script.js"></script>
+	</body>
 </html>

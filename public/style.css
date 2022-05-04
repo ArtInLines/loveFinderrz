@@ -6,4 +6,165 @@ html,
 body {
 	background-color: black;
 	color: whitesmoke;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #292929;
+	font: 90% Roboto, Arial, sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+	color: red;
+}
+
+nav > ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	list-style: none;
+	font-size: 1.5em;
+	position: relative;
+	margin: 0 0 0.2em 0;
+	padding: 0;
+	width: 12em;
+}
+
+nav ul ul {
+	position: absolute;
+	top: -0.6em;
+	left: 10em;
+	font: 0/0 serif;
+	/* Unternavigation ausblenden */
+
+	z-index: -1;
+	transition: font 0.5s;
+}
+
+nav ul li:hover ul,
+nav ul a:focus ~ ul {
+	font: inherit;
+	z-index: auto;
+	/*  Unternavigation einblenden */
+}
+
+@media (min-width: 45em) {
+	nav li {
+		font-size: 1em;
+	}
+}
+
+nav a {
+	display: block;
+	padding: 0.4em;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	border: thin solid darkblue;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px white inset;
+	color: red;
+	background-color: transparent;
+	transition: all 0.25s ease-in;
+}
+
+nav li[aria-current] a {
+	background-color: firebrick;
+	color: red;
+}
+
+nav a:focus,
+nav a:hover,
+nav li[aria-current] a:focus,
+nav li[aria-current] a:hover {
+	color: darkblue;
+	background-color: red;
+}
+
+p {
+	padding: 0 10px;
+	line-height: 1.8;
+}
+
+ul li {
+	padding-right: 10px;
+	line-height: 1.6;
+}
+
+h3 {
+	padding: 5px 20px;
+	margin: 0;
+}
+
+div#header {
+	position: relative;
+}
+
+div#header h1 {
+	height: 80px;
+	line-height: 80px;
+	margin: 0;
+	padding-left: 10px;
+	background: #e0e0e0;
+	color: red;
+}
+
+div#header a {
+	position: absolute;
+	right: 0;
+	top: 23px;
+	padding: 10px;
+	color: #006;
+}
+
+div#navigation {
+	background: #fff;
+}
+
+div#navigation li {
+	list-style: none;
+}
+
+div#extra {
+	background: indianred;
+	height: 100%;
+}
+
+div#footer {
+	background: #42444e;
+	color: #fff;
+}
+
+div#footer p {
+	padding: 20px 10px;
+}
+
+div#wrapper {
+	float: left;
+	width: 100%;
+}
+
+div#content {
+	margin: 0 10%;
+}
+
+div#navigation {
+	float: left;
+	width: 10%;
+	margin-left: -100%;
+}
+
+div#extra {
+	float: right;
+	width: 10%;
+	margin-left: -25%;
+}
+
+div#footer {
+	clear: left;
+	width: 100%;
 }
