@@ -11,7 +11,7 @@ app.use(express.json());
 app.use('/public', express.static(PUBLIC_PATH));
 
 app.get('/', (req, res) => {
-	res.sendFile(path.join(PUBLIC_PATH, 'index.html'));
+	res.sendFile(path.join(PUBLIC_PATH, 'loveFinderzz.html'));
 });
 
 app.listen(PORT, console.log(`Server listening on port ${PORT}...`));
