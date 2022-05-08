@@ -15,4 +15,7 @@
 
 ## Valentin
 
--   ...
+-   Für eine SQL-ORM Library entscheiden
+    -   https://stackabuse.com/using-sequelize-js-and-sqlite-in-an-express-js-app/
+    -   https://sequelize.org/docs/v6/getting-started/
+-   SQL-Anbindung & REST-API fertigstellen

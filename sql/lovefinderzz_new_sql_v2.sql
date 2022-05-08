@@ -18,7 +18,7 @@
 -- -----------------------------------------------------
 
 
-CREATE TABLE IF NOT EXISTS user (
+CREATE TABLE IF NOT EXISTS `user` (
   `id` INTEGER NOT NULL CONSTRAINT 'user_pk' PRIMARY KEY AUTOINCREMENT ,
   `name` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
