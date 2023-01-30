@@ -1,3 +1,7 @@
+Code für ein kleines Projekt fürs Studium.
+
+---
+
 # Love Finderzz
 
 Name ist noch _work in progress_.
